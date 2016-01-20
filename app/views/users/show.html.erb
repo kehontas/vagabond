@@ -1,12 +1,26 @@
-<div>
-	Signed in as, <%= @user.email %>
+
+
+<div class ="container" style="width:50%; position:relative; dispay:inline; float:left;">
+ 	<div>
+		Signed in as, <%= @user.email %>
+	</div>
+
+	<div>
+		welcome, <%= @user.first_name %> <%= @user.last_name %>
+	</div>
+
+	<div>
+		this profile was created on: <%= @user.created_at %>
+	</div>
+	<div><%= button_to "Edit User", edit_user_path, method: :get %></div>
 </div>
 
-<div>
-	welcome, <%= @user.first_name %> <%= @user.last_name %>
+
+<div  style="width:50%; position:relative; display:inline; float:right;"> 
+posts go here
+<%= yield %>
+
 </div>
 
-<div>
-	this profile was created on: <%= @user.created_at %>
-</div>
-<div><%= button_to "Edit User", edit_user_path, method: :get %></div>
+
+
