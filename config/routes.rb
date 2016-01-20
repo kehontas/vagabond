@@ -12,8 +12,8 @@ Rails.application.routes.draw do
   get "/logout", to: "sessions#destroy"
   post "/sessions", to: "sessions#create"
 
-  get "/posts", to: "posts#index"
-  get "/posts/new", to: "posts#new", as: "new_post"
-  post "/posts", to: "posts#create"
-  get '/posts/:id', to: 'posts#show', as: 'post'
+  get "/users/:id/posts", to: "posts#index"
+  get "/users/:id/posts/new", to: "posts#new", as: "new_post"
+  post "/users/:id/posts", to: "posts#create"
+  get "/users/:id/posts/:id", to: 'posts#show', as: 'post'
 end

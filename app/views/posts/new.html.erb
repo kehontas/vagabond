@@ -1,6 +1,6 @@
 Create a New Post:
 
-<%= form_for @post do |f| %>
+<%= form_for @post, url: "new_post_path", method: 'get' do |f| %>
   <div>
     <%= f.text_field :title, placeholder: "Title" %>
   </div>
