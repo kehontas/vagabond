@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   get 'posts/new'
 
-  get 'posts/show'
+  get '/posts/:id', to: 'posts#show', as: 'post'
 
   root to: "users#index"
 
