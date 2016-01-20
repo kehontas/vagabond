@@ -1,3 +1,11 @@
 <div>
-	Welcome, <%= @user.email %>
+	Signed in as, <%= @user.email %>
+</div>
+
+<div>
+	welcome, <%= @user.first_name %> <%= @user.last_name %>
+</div>
+
+<div>
+	this profile was created on: <%= @user.created_at %>
 </div>
