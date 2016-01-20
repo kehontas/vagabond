@@ -1,10 +1,4 @@
 Rails.application.routes.draw do
-  get 'posts/index'
-
-  get 'posts/new'
-
-  get '/posts/:id', to: 'posts#show', as: 'post'
-
   root to: "users#index"
 
   get "/users", to: "users#index", as: "users"
@@ -17,4 +11,9 @@ Rails.application.routes.draw do
   get "/login", to: "sessions#new"
   get "/logout", to: "sessions#destroy"
   post "/sessions", to: "sessions#create"
+
+  get "/posts", to: "posts#index"
+  get "/posts/new", to: "posts#new", as: "new_post"
+  post "/posts", to: "posts#create"
+  get '/posts/:id', to: 'posts#show', as: 'post'
 end
