@@ -1,0 +1,25 @@
+
+
+
+<div class ="container" style="width:30%; position:relative; dispay:inline; float:left;">
+ 	<div>
+		Signed in as, <%= current_user.email %>
+	</div>
+
+	<div>
+		Welcome, <%= current_user.first_name %> <%= current_user.last_name %>
+	</div>
+
+	<div>
+		this profile was created on: <%= current_user.created_at %>
+	</div>
+	
+</div>
+
+
+<div  style="width:70%; position:relative; display:inline; float:right;"> 
+posts go here
+
+	<h3><%= @post.title %></h3>
+	<p>	<%= @post.content %> </p>
+</div>
