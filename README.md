@@ -1,28 +1,12 @@
-== README
+Team Awesome's Vagabond
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[Heroku Link](https://www.TBD.com)
 
-Things you may want to cover:
+[GitHub Link](https://github.com/anonym0us3/vagabond/)
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![screenshot]
+(http://i.imgur.com/TBDTBDTBD.jpg)
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+
+##Awesome Vagabond Overview
