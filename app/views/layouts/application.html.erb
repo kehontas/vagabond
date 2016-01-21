@@ -1,22 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+
+body {
+    background-color: blue;
+}
+
+h1 {
+    color: maroon;
+    margin-left: 40px;
+} 
+
+</style>
+
+
   <title>Vagabond</title>
-<!--   // <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> -->
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
+
+
+<header>  
+<div>   
+    <h1>Vagabond</h1>
+   <img src="http://png.clipart.me/graphics/thumbs/169/backpacker-standing-on-top-of-mountain-vector-illustration_16948822.jpg">
+
+</div></header>
+
+
 <body>
-<ul>
-  <% if current_user %>
-    <li><%= link_to "Profile", user_path(current_user) %></li>
-    <li><%= link_to "Log Out", logout_path %></li>
-  <% else %>
-    <li><%= link_to "Create Account", new_user_path %></li>
-    <li><%= link_to "Log In", login_path %></li>
-  <% end %>
-</ul>
+
+
+
 <%= yield %>
 
 </body>
