@@ -1,7 +1,14 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
   get 'pages/home'
 
   root '/', to: 'pages#home'
+=======
+  
+  root to: "pages#home"
+
+  get '/', to: 'pages#home'
+>>>>>>> 5f558e93383b429cadd17f138897d2f0d81ade59
 
   get "/users", to: "users#index", as: "users"
   get "/users/new", to: "users#new", as: "new_user"
