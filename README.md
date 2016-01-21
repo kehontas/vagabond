@@ -16,8 +16,8 @@ A travel community for users to share city-specific tips (via posts) about their
 
 ### Prerequisites:
 
-A Rails >= 3.2 Application
-Ruby >= 2.0
+* A Rails >= 3.2 Application
+* Ruby >= 2.0
 
 #### Installation:
 
@@ -26,6 +26,7 @@ Add these lines to your gemfile if you do not have them already:
 	gem 'bcrypt', '~> 3.1.7'
 	gem "paperclip", "~> 4.3"
 
+*In order for the Paperclip gem to run, it requires ImageMagick.*
 If you're on Mac OS X, you'll want to run the following with Homebrew:
 
 	brew install imagemagick
