@@ -1,6 +1,14 @@
 Sign Up
+<br><br>
 
-<%= form_for @user do |f| %>
+  <%= image_tag @user.avatar.url(:medium) %>
+
+<br><br>
+
+<%= form_for @user, html: { multipart: true } do |f| %>
+  <div>
+    <%= f.file_field :avatar %>
+  </div>
   <div>
     <%= f.email_field :email, placeholder: "Email" %>
   </div>

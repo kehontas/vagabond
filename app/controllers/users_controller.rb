@@ -8,7 +8,7 @@ class UsersController < ApplicationController
   end
 
   def create
-  	user_params = params.require(:user).permit(:first_name, :last_name, :email, :password, :current_city)
+  	user_params = params.require(:user).permit(:first_name, :last_name, :email, :password, :current_city, :avatar)
   	@user = User.create(user_params)
     login(@user)
   	redirect_to @user
@@ -34,4 +34,6 @@ class UsersController < ApplicationController
     def get_user_params
       params.require(:user).permit(:first_name, :last_name, :email, :password, :current_city)
     end
+
+#delete method will require @user.avatar = nil
 end

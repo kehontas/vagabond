@@ -1,6 +1,15 @@
 
 
 <div class ="container" style="width:50%; position:relative; dispay:inline; float:left;">
+
+<div>
+
+	<%= image_tag @user.avatar.url(:medium) %>
+		
+
+</div>
+<br><br>
+
  	<div>
 		Signed in as, <%= @user.email %>
 	</div>
