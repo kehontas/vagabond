@@ -11,3 +11,5 @@
  post = Post.create({title: 'my first post', content: "this is my first post yay!"})
  post2 = Post.create({title: 'my second post', content: "this is my second post yay!"})
  post3 = Post.create({title: 'my third post', content: "this is my third post yay!"})
+
+ city1 = City.create({name: 'San Francisco'})

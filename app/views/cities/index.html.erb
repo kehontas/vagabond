@@ -1,0 +1,9 @@
+<h1><%= image_tag("ggbridge.jpg") %></h1>
+
+ <% @cities.each do |cities| %>
+	<div>
+		<p><%= link_to @cities.name %></p>
+
+	</div>
+	<br>
+<% end %>
