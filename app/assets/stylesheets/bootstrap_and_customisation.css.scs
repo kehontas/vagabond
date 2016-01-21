@@ -1,0 +1,16 @@
+@import 'bootstrap';
+
+/*does not work*/
+
+
+.bg_image {
+	background: url('giphy.gif');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed; 
+}
+
+
+.lol {
+	color: green;
+}

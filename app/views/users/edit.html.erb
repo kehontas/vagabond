@@ -1,0 +1,9 @@
+<div> 
+<%= form_for @user do |f| %>
+
+	<div>First Name:<br><%= f.text_field :first_name %></div>
+	<div>Last Name:<br><%= f.text_field :last_name %></div>
+	<div>Current City:<br><%= f.text_field :current_city %></div>
+	<div><%= f.submit 'update user' %></div>
+<% end %>
+</div>
