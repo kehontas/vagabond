@@ -15,6 +15,7 @@ class CitiesController < ApplicationController
 
 	def show
 		@cities = City.find_by_id(params[:id])
+		@posts = @cities.posts
 	end
 
 	private
