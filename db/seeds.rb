@@ -12,5 +12,7 @@
  post = Post.create({title: 'my first post', content: "this is my first post yay!", user_id: 1})
  post2 = Post.create({title: 'my second post', content: "this is my second post yay!", user_id: 1})
  post3 = Post.create({title: 'my third post', content: "this is my third post yay!", user_id: 2})
- city1 = City.create({name: 'San Francisco'})
+ city1 = City.create({name: 'San Francisco', city_id: 1})
+ city2 = City.create({name: 'Chicago', city_id: 2})
+ city3 = City.create({name: 'New York', city_id: 3})
 
