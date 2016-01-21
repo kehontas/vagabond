@@ -17,3 +17,11 @@
  *= require users.scss
  *= require posts.scss
  */
+body {
+    background-color: blue;
+}
+
+h1 {
+    color: maroon;
+    margin-left: 40px;
+} 
