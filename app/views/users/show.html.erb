@@ -18,7 +18,9 @@
 	<div>
 		this profile was created on: <%= @user.created_at %>
 	</div>
-	<div><%= button_to "Edit User", edit_user_path, method: :get %></div>
+	<div><%= button_to "Edit User", edit_user_path, method: :get %>
+				<%= button_to "Create New Post", new_post_path, method: :post %>
+	</div>
 </div>
 
 
