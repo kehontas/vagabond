@@ -26,7 +26,8 @@ Add these lines to your gemfile if you do not have them already:
 	gem 'bcrypt', '~> 3.1.7'
 	gem "paperclip", "~> 4.3"
 
-*In order for the Paperclip gem to run, it requires ImageMagick.*
+**In order for the Paperclip gem to run, it requires ImageMagick.**
+
 If you're on Mac OS X, you'll want to run the following with Homebrew:
 
 	brew install imagemagick
