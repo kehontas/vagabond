@@ -11,13 +11,14 @@
 
 ## Awesome Vagabond Overview:
 
-A travel community for users to share city-specific tips (via posts) about their favourite locations around the world.
+A travel community for users to share city-specific tips (via posts) about their favourite locations around the world!
 
 
 ### Prerequisites:
 
 * A Rails >= 3.2 Application
 * Ruby >= 2.0
+* RESTful design
 
 #### Installation:
 
@@ -39,4 +40,13 @@ the following with apt-get:
 
 Finally,
 
-`bundle install` and you're ready to rock!
+`bundle install` and you're ready to continue!
+
+
+
+
+###API Endpoints
+
+Endpoint | Method | Route | Data
+--- | --- | --- | ---
+*Homepage* | GET | / | Serves the homepage
