@@ -20,7 +20,7 @@
  
  */
 body {
-	font-family: Optima,;
+	font-family: 'arial';
 background: rgba(147,206,222,1);
 background: -moz-linear-gradient(-45deg, rgba(147,206,222,1) 0%, rgba(5,51,64,1) 0%, rgba(73,165,191,1) 100%);
 background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(147,206,222,1)), color-stop(0%, rgba(5,51,64,1)), color-stop(100%, rgba(73,165,191,1)));
@@ -32,6 +32,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93cede', end
 background-repeat: no-repeat;
 height: 100%;
 background-attachment: fixed;
+color: white;
+}
+
+input {
+	color: black;
 }
 
 .blocks{
@@ -39,6 +44,9 @@ background-attachment: fixed;
 	display: inline-block;
 } 
 
+.jumbotron{
+	color: navy;
+}
 
 h1  {
     color: navy;
@@ -63,6 +71,10 @@ ul {
 	color: navy;
 }
 
+.center{
+	text-align: center;
+	font-size: 20px;
+}
 
 .centered {
 	position: relative;
