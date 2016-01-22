@@ -1,0 +1,14 @@
+<strong>Edit Your Post:</strong>
+<br><br>
+<%= form_for @post do |f| %>
+  Title:
+  <div>
+    <%= f.text_field :title, placeholder: "Title" %>
+  </div>
+  Content:
+  <div>
+    <%= f.text_area :content, placeholder: "Content" %>
+  </div>
+  <%= f.submit "Save Post" %>
+  <%= button_to "Back", post_path, method: :get %>
+<% end %>
