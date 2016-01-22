@@ -1,5 +1,5 @@
-login 
-
+<h2>login</h2> 
+<p>
 <%= form_for @user, url: '/sessions', method: :post do |f| %>
 	<div>
 		<%= f.email_field :email, placeholder: 'Email' %>
@@ -11,3 +11,4 @@ login
 		<%= f.submit 'Submit' %>
 	</div>
 <% end %>
+</p>
