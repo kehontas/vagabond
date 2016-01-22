@@ -15,13 +15,12 @@
  *=require pages.scss
  *=require sessions.scss
  *=require users.scss
- *=require cities.scss
  *=require posts.scss 
  *=require show.scss
  
  */
 body {
-	font-family: Papyrus, fantasy;
+	font-family: Optima,;
 background: rgba(242,246,248,1);
 background: -moz-linear-gradient(45deg, rgba(242,246,248,1) 0%, rgba(27,101,150,1) 74%, rgba(27,101,150,1) 100%);
 background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(242,246,248,1)), color-stop(74%, rgba(27,101,150,1)), color-stop(100%, rgba(27,101,150,1)));
@@ -49,6 +48,11 @@ h1  {
 		position: relative;
 }
 ul {
-	height: 45px;
+	color: navy;
+	height: 50px;
 	font-size: 20px;
+}
+
+#bar{
+	color: navy;
 }
