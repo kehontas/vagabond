@@ -5,7 +5,7 @@
 
 
 <div>
- 	<% @posts.each do |post| %>
+ 	<% @posts.order('created_at DESC').each do |post| %>
  <ul>
  	<li>
  		<%= link_to post.title, post_path(post.id) %>

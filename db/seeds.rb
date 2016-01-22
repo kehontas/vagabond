@@ -15,7 +15,7 @@
  city3 = City.create({name: 'New York', background_image: 'http://www.platinummaintenance.com/wp-content/uploads/2013/11/skyline.jpg'})
 
 
-post = Post.create({title: 'my first post', content: "this is my first post yay!", user_id: 1, city_id: 1})
+ post = Post.create({title: 'my first post', content: "this is my first post yay!", user_id: 1, city_id: 1})
  post2 = Post.create({title: 'my second post', content: "this is my second post yay!", user_id: 1, city_id: 1})
  post3 = Post.create({title: 'my third post', content: "this is my third post yay!", user_id: 2, city_id: 2})
 
