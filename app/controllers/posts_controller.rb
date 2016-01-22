@@ -13,10 +13,39 @@ class PostsController < ApplicationController
   end
 
   def create
-    post_params = params.require(:post).permit(:title, :content)
+    post_params = params.require(:post).permit(:title, :content, :city_id)
     @post = Post.create(post_params)
-
+    @post.city_id = City.find_by_id(params[:id])
     redirect_to posts_path
   end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 end
 

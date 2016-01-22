@@ -2,6 +2,8 @@
 	<h1><%= image_tag("ggbridge.jpg") %></h1>
 	<h2><%= @cities.name %></h2>
 
+	<%= button_to "Create New Post", new_post_path, method: :get %><br>
+
 <div>
 
 <% @posts.each do |post| %>
