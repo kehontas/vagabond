@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20160121222723) do
     t.string   "background_image"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
+    t.integer  "city_id"
   end
 
   create_table "posts", force: :cascade do |t|
