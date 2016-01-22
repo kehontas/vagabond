@@ -14,6 +14,7 @@
 A travel community for all users to share city-specific tips (via posts) about their favourite locations around the world!
 
 
+
 #### Prerequisites:
 
 * A Rails >= 3.2 Application
@@ -22,19 +23,24 @@ A travel community for all users to share city-specific tips (via posts) about t
 * Active Record ORM
 * RESTful design
 
-##### Getting Started & Installation:
+##### Installation/QuickStart Guide:
 
+Clone this repo. For help, please check out [this guide](http://bfy.tw/3qzM).
 
-
-Add these lines to your gemfile if you do not have them already:
+Add these lines to your gemfile if you do not already have them:
 
 	gem 'bcrypt', '~> 3.1.7'
 	gem "paperclip", "~> 4.3"
 
 In order for the Paperclip gem to run, it requires ImageMagick. **Please follow the instructions at [ImageMagick's site](https://github.com/thoughtbot/paperclip#requirements)**
 
+If you forget to `bundle install` after that, you're going to Developer Hell and a puppy will die. **Do not be an asshole to puppies!**
 
-### List of API Endpoints
+*Starting the database*
+
+`rake db:drop` and then `rake db:create db:migrate` to get the ball rolling. We've kindly supplied you with some basic seed data, so you can right-away do `rake db:seed`.
+
+#### List of API Endpoints
 
 Endpoint | Method | Route | Data
 --- | --- | --- | ---
