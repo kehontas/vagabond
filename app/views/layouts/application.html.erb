@@ -13,13 +13,13 @@
   <%= csrf_meta_tags %>
 </head>
 
-<header id= "all"> 
+<header> 
     <h1>Vagabond</h1>
    	<img id='logo' src="http://png.clipart.me/graphics/thumbs/169/backpacker-standing-on-top-of-mountain-vector-illustration_16948822.jpg">
 </header>
-<div>
 
 <ul class="nav nav-tabs">
+<li><%= link_to "Home", '/' %></li>
   <% if current_user %>
     <li ><%= link_to "Profile", user_path(current_user) %></li>
     <li><%= link_to "Log Out", logout_path %></li>

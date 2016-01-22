@@ -19,16 +19,19 @@
  */
 
 
-header  {
+h1  {
     color: navy;
      text-align: center;
     
 }
 
 #logo {
-		text-align: right;
-		height: 30px;
-		width: 30px;
+		height: 50px;
+		width: 50px;
+		float: right;
+		padding-right: 10px
+		
+
 }
 
 #all{
