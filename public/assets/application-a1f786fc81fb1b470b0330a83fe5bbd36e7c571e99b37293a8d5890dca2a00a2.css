@@ -10,18 +10,12 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *=require_self
- *=require users.scss
- *=require cities.scss
- *=require pages.scss
- *=require posts.scss
- *=
+
+
  */
+
 body {
-    background-color: lightblue;
+    background-color: blue;
 }
 
-header  {
-    color: navy;
-     text-align: center;
-}
+
