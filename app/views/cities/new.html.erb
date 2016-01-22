@@ -1,8 +1,10 @@
-Create a New city:
-
+<div class="center" >
+Create a New City:
+</div>
 <%= form_for @cities do |f| %>
-  <div>
+  <div class="center">
     <%= f.text_field :name, placeholder: "Name" %>
   </div>
-  <%= f.submit "Create city" %>
+  <div class="center" >
+  <%= f.submit "Create city" %></div>
 <% end %>

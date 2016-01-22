@@ -1,14 +1,16 @@
+<div class="center" >
 Create a New Post:
-
+</div>
 <%= form_for @post, url: post_create_path do |f| %>
-  <div>
+  <div class="center" >
     <%= f.text_field :title, placeholder: "Title" %>
   </div>
-  <div>
+  <div class="center" >
     <%= f.text_area :content, placeholder: "Content" %>
   </div>
  
+ <div class="center" >
   <%= f.hidden_field :user_id, value: @current_user.id%>
   <%= f.hidden_field :city_id, value: @city_id.id %>
-  <%= f.submit "Create Post" %>
+  <%= f.submit "Create Post" %></div>
 <% end %>
