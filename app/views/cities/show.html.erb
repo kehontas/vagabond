@@ -1,16 +1,17 @@
-	<h1> <%= image_tag("#{@cities.background_image}", :class => "banner", :width => "100%") %> </h1>
+<h1> <%= image_tag("#{@cities.background_image}", :class => "banner", :width => "100%") %> </h1>
+
+<div style="position:relative; left:45%"> 
+
 	<h2><%= @cities.name %></h2>
 
 	<%= button_to "Create New Post", new_post_path, method: :get %><br>
-
-
-<div>
- 	<% @posts.order('created_at DESC').each do |post| %>
- <ul>
- 	<li>
- 		<%= link_to post.title, post_path(post.id) %>
- 	</li>
- 
- </ul>
- <% end %>
-</div> 
+</div>
+	<div style="position:relative; left:45%">
+	 	<% @posts.order('created_at DESC').each do |post| %>
+			 <ul>
+			 	<li>
+			 		<%= link_to post.title, post_path(post.id) %>
+			 	</li>
+			 </ul>
+	 	<% end %>
+	</div> 
