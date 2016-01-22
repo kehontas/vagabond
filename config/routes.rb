@@ -1,3 +1,4 @@
+
 Rails.application.routes.draw do
 
   
@@ -18,8 +19,8 @@ Rails.application.routes.draw do
   post "/sessions", to: "sessions#create"
 
   get "/posts", to: "posts#index", as: "posts"
-  get "/posts/new", to: "posts#new", as: "new_post"
-  post "/posts", to: "posts#create"
+  get "/cities/:id/posts/new", to: "posts#new", as: "new_post"
+  post "/posts", to: "posts#create", as: 'post_create'
   get "/posts/:id", to: "posts#show", as: "post"
   get "/posts/:id/edit", to: "posts#edit", as: "edit_post"
   patch "/posts/:id", to: "posts#update"

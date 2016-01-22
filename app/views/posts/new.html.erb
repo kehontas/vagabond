@@ -1,11 +1,14 @@
 Create a New Post:
 
-<%= form_for @post do |f| %>
+<%= form_for @post, url: post_create_path do |f| %>
   <div>
     <%= f.text_field :title, placeholder: "Title" %>
   </div>
   <div>
     <%= f.text_area :content, placeholder: "Content" %>
   </div>
+ 
+  <%= f.hidden_field :user_id, value: @current_user.id%>
+  <%= f.hidden_field :city_id, value: @city_id.id %>
   <%= f.submit "Create Post" %>
 <% end %>
