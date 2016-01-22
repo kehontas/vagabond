@@ -25,19 +25,14 @@
 
 
 <div  style="width:50%; position:relative; display:inline; float:right;"> 
-posts go here
+	<h2>Posts</h2>
 
-<% @posts.each do |post| %>
-<ul>
-	<li>
-		<%= link_to post.title, post_path(post.id) %>
-		<%= button_to "Edit Post", edit_post_path(post.id), method: :get %>
-		<%= button_to "Delete Post", delete_post_path(post.id), :data => {:confirm => 'Are you sure?'}, method: :delete %>
-	</li>
-
-</ul>
-	
-<% end %>
+	<% @posts.each do |post| %>
+		<ul>
+			<li><%= link_to post.title, post_path(post.id) %></li>
+		</ul>
+			<%= button_to "Edit Post", edit_post_path(post.id), method: :get %>	<%= button_to "Delete Post", delete_post_path(post.id), :data => {:confirm => 'Are you sure?'}, method: :delete %>
+	<% end %>
  <!-- <%= yield %> -->
 
 </div>
