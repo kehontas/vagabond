@@ -1,3 +1,4 @@
+
 Rails.application.routes.draw do
 
   
@@ -17,14 +18,16 @@ Rails.application.routes.draw do
   get "/logout", to: "sessions#destroy"
   post "/sessions", to: "sessions#create"
 
-  get "/posts", to: "posts#index"
-  get "/posts/new", to: "posts#new", as: "new_post"
-  post "/posts", to: "posts#create"
-  get '/posts/:id', to: 'posts#show', as: 'post'
+  get "/posts", to: "posts#index", as: "posts"
+  get "/cities/:id/posts/new", to: "posts#new", as: "new_post"
+  post "/posts", to: "posts#create", as: 'post_create'
+  get "/posts/:id", to: "posts#show", as: "post"
+  get "/posts/:id/edit", to: "posts#edit", as: "edit_post"
+  patch "/posts/:id", to: "posts#update"
+  delete "/posts/:id", to: "posts#destroy", as: "delete_post"
 
   get '/cities', to: 'cities#index'
   get '/cities/new', to: 'cities#new'
   post '/cities', to: 'cites#create'
   get '/cities/:id', to: 'cities#show', as: 'city'
-
 end
