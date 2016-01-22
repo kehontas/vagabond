@@ -5,7 +5,7 @@
 [GitHub Link](https://github.com/anonym0us3/vagabond/)
 
 ![screenshot]
-(http://i.imgur.com/TBDTBDTBD.jpg)
+(http://i.imgur.com/xSQrVik.png)
 
 
 
@@ -60,10 +60,49 @@ Endpoint | Method | Route | Data
 *"/logout"* | GET | "sessions#destroy" | Logs out existing user, deletes session data/cookie
 *"/sessions"* | POST | "sessions#create" |
 *"/posts"* | GET | "posts#index" | Lists all posts
-*"/posts/new"* | GET | "posts#new" | Takes a user to a post creation page
 *"/posts"* | POST | "posts#create" | Creates a new post from post creation page's data
 *'/posts/:id'* | GET | 'posts#show' | Page for a single post
 *'/cities'* | GET | 'cities#index' | Lists all cities
-*'/cities/new'* | GET | 'cities#new' |
-*'/cities'* | POST | 'cites#create' |
 *'/cities/:id'* | GET | 'cities#show' | Shows a single city
+##Existing Features
+###A user can:
+
+
+* Sign up for an account.
+
+* Log in to their account if they already have one.
+
+* Be redirected to their public profile page after logging in.
+
+* On their public profile page, see their name, the current city they have set in their profile, and their join date.
+
+* Edit their profile.
+
+* See the titles of all the posts they've contributed. 
+
+* Click on the title of one of their posts and be redirected to a "show" page for that post.
+
+* See a "default" profile photo and set one of their own.
+
+* View City pages.
+
+* View a list of posts on each city's page.
+
+* Create, edit and delete a post.
+
+* CANNOT save empty posts, or sign up with an existing email.
+
+* MUST be logged in to create/update/destroy resources.
+
+
+##Planned Features
+* Planning to add pop-up messages that validate the authenticity of a user and password
+* Add a button to create a new city
+
+
+##Contributors:
+
+* Danny Chan
+* Thomas Currie
+* Kehontas Rowe
+* Nathan S.
