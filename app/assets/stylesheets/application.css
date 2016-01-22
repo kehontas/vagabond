@@ -32,6 +32,7 @@ background: linear-gradient(45deg, rgba(242,246,248,1) 0%, rgba(27,101,150,1) 74
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#1b6596', GradientType=1 );
 background-repeat: no-repeat;
 height: 100%;
+background-attachment: fixed;
 }
 
 h1  {
@@ -49,5 +50,5 @@ h1  {
 }
 ul {
 	height: 45px;
-	text-al
+	font-size: 20px;
 }
