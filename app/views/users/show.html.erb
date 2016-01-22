@@ -30,7 +30,9 @@ posts go here
 <% @posts.each do |post| %>
 <ul>
 	<li>
-		<%= link_to post.title, post_path(post.id) %> <%= button_to "Delete Post", delete_post_path(post.id), method: :delete %>
+		<%= link_to post.title, post_path(post.id) %>
+		<%= button_to "Edit Post", edit_post_path(post.id), method: :get %>
+		<%= button_to "Delete Post", delete_post_path(post.id), method: :delete %>
 	</li>
 
 </ul>
