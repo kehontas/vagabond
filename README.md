@@ -45,16 +45,19 @@ Endpoint | Method | Route | Data
 *"/users/:id"* | GET | "users#show" | Shows a single user's page
 *"/users/:id/edit"* | GET "users#edit" | Takes logged-in user to update form for themselves
 *"/users/:id"* | PATCH/PUT | "users#update" | Updates user's details from edit page's data
-
+Endpoint | Method | Route | Data
+--- | --- | --- | ---
 *"/login"* | GET | "sessions#new" | Logs in existing user
 *"/logout"* | GET | "sessions#destroy" | Logs out existing user, deletes session data/cookie
 *"/sessions"* | POST | "sessions#create" |
-
+Endpoint | Method | Route | Data
+--- | --- | --- | ---
 *"/posts"* | GET | "posts#index" | Lists all posts
 *"/posts/new"* | GET | "posts#new" | Takes a user to a post creation page
 *"/posts"* | POST | "posts#create" | Creates a new post from post creation page's data
 *'/posts/:id'* | GET | 'posts#show' | Page for a single post
-
+Endpoint | Method | Route | Data
+--- | --- | --- | ---
 *'/cities'* | GET | 'cities#index' | Lists all cities
 *'/cities/new'* | GET | 'cities#new' |
 *'/cities'* | POST | 'cites#create' |
