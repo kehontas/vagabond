@@ -11,42 +11,51 @@
 
 ## Awesome Vagabond Overview:
 
-A travel community for users to share city-specific tips (via posts) about their favourite locations around the world!
+A travel community for all users to share city-specific tips (via posts) about their favourite locations around the world!
 
 
-### Prerequisites:
+#### Prerequisites:
 
 * A Rails >= 3.2 Application
 * Ruby >= 2.0
+* PostgreSQL database
+* Active Record ORM
 * RESTful design
 
-#### Installation:
+##### Getting Started & Installation:
+
+
 
 Add these lines to your gemfile if you do not have them already:
 
 	gem 'bcrypt', '~> 3.1.7'
 	gem "paperclip", "~> 4.3"
 
-**In order for the Paperclip gem to run, it requires ImageMagick.**
-
-If you're on Mac OS X, you'll want to run the following with Homebrew:
-
-	brew install imagemagick
-
-If you're on Ubuntu (or any Debian base Linux distribution), you'll want to run
-the following with apt-get:
-
-    sudo apt-get install imagemagick -y
-
-Finally,
-
-`bundle install` and you're ready to continue!
+**In order for the Paperclip gem to run, it requires ImageMagick.** Please follow the instructions at [ImageMagick's site](https://github.com/thoughtbot/paperclip#requirements)
 
 
-
-
-###API Endpoints
+### List of API Endpoints
 
 Endpoint | Method | Route | Data
 --- | --- | --- | ---
-*Homepage* | GET | / | Serves the homepage
+*/* | GET | / | Serves the homepage
+*"/users"* | GET | "users#index" | Displays # of signed-up users
+*"/users/new"* | GET | "users#new" | Takes new user to signup page
+*"/users"* | POST | "users#create" | Creates new user using signup page's data 
+*"/users/:id"* | GET | "users#show" | Shows a single user's page
+*"/users/:id/edit"* | GET "users#edit" | Takes logged-in user to update form for themselves
+*"/users/:id"* | PATCH/PUT | "users#update" | Updates user's details from edit page's data
+
+*"/login"* | GET | "sessions#new" | Logs in existing user
+*"/logout"* | GET | "sessions#destroy" | Logs out existing user, deletes session data/cookie
+*"/sessions"* | POST | "sessions#create" |
+
+*"/posts"* | GET | "posts#index" | Lists all posts
+*"/posts/new"* | GET | "posts#new" | Takes a user to a post creation page
+*"/posts"* | POST | "posts#create" | Creates a new post from post creation page's data
+*'/posts/:id'* | GET | 'posts#show' | Page for a single post
+
+*'/cities'* | GET | 'cities#index' | Lists all cities
+*'/cities/new'* | GET | 'cities#new' |
+*'/cities'* | POST | 'cites#create' |
+*'/cities/:id'* | GET | 'cities#show' | Shows a single city
