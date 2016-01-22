@@ -1,4 +1,7 @@
 class UsersController < ApplicationController
+
+  before_action :logged_in?, only: [:index, :new, :edit, :show, :update]
+
   def index
     @users = User.all
   end
@@ -17,6 +20,9 @@ class UsersController < ApplicationController
   def show
   	@user = User.find_by_id(params[:id])
     @posts = @user.posts
+    if @user != current_user
+      redirect_to current_user
+    end
   end
 
   def edit 

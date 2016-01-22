@@ -1,4 +1,7 @@
 class CitiesController < ApplicationController
+
+	before_action :logged_in?, only: [:new, :edit, :create]
+
 	def index
 		@cities = City.all
 	end
