@@ -18,5 +18,29 @@ class PostsController < ApplicationController
 
     redirect_to posts_path
   end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  def destroy
+    @post = Post.find_by_id(params[:id])
+    @post.destroy
+    redirect_to user_path(user)
+  end
 end
 
