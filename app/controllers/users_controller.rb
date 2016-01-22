@@ -17,6 +17,9 @@ class UsersController < ApplicationController
   def show
   	@user = User.find_by_id(params[:id])
     @posts = @user.posts
+    if @user != current_user
+      redirect_to current_user
+    end
   end
 
   def edit 
