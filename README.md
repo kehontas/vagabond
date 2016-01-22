@@ -97,7 +97,7 @@ Endpoint | Method | Route | Data
 
 ##Planned Features
 * Planning to add pop-up messages that validate the authenticity of a user and password
-* Add a button to create a new city
+* Add a button to create a new city.
 
 
 ##Contributors:
