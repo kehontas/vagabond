@@ -1,29 +1,25 @@
-<div class="sign-up">
-<P>Add your profile image</P>
-  <%= image_tag "http://i0.wp.com/invoice-factoring-information.com/components/com_k2/images/placeholder/user.png" %>
- 
- <%= form_for @user, html: { multipart: true } do |f| %>
+<body>
+<br>
+<div id="img">
+     <%= image_tag "http://i0.wp.com/invoice-factoring-information.com/components/com_k2/images/placeholder/user.png" %></div>
+<div id='float'>
+    <%= form_for @user, html: { multipart: true } do |f| %>
+   
+     <%= f.file_field :avatar %>
+     </div>
+    <br>
+   <div id='form'>
+      <%= f.email_field :email, placeholder: "Email" %>
 
-  <div>
-    <%= f.file_field :avatar %>
-  </div><br>
-
-  <div id="sign_up">
-    <%= f.email_field :email, placeholder: "Email" %>
+       <%= f.text_field :first_name, placeholder: "First Name" %>
+    
+     <%= f.text_field :last_name, placeholder: "Last Name" %> 
+    
+      <%= f.text_field :current_city, placeholder: "Current City" %>
+    
+      <%= f.password_field :password, placeholder: "Password" %>
+    <br>
+    <%= f.submit "Sign Up" %>
+    <% end %>
   </div>
-  <div>
-    <%= f.text_field :first_name, placeholder: "First Name" %>
-  </div>
-  <div>
-    <%= f.text_field :last_name, placeholder: "Last Name" %>
-  </div>
-  <div>
-    <%= f.text_field :current_city, placeholder: "Current City" %>
-  </div>
-  <div>
-    <%= f.password_field :password, placeholder: "Password" %>
-  </div>
-<button type="button" class="btn btn-success">
-  <%= f.submit "Sign Up" %></button>
-<% end %>
-</div>
+</body>

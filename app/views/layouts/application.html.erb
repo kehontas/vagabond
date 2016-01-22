@@ -2,8 +2,6 @@
 <html>
 <head>
 
-
-
   <title>Vagabond</title>
 
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
@@ -13,13 +11,17 @@
   <%= csrf_meta_tags %>
 </head>
 
-<header> 
+<header>
+<div>     
+  <img id='logo' src="http://png.clipart.me/graphics/thumbs/169/backpacker-standing-on-top-of-mountain-vector-illustration_16948822.jpg">
     <h1>Vagabond</h1>
-   	<img id='logo' src="http://png.clipart.me/graphics/thumbs/169/backpacker-standing-on-top-of-mountain-vector-illustration_16948822.jpg">
+
+    </div>
 </header>
 
 <ul class="nav nav-tabs">
 <li><%= link_to "Home", '/' %></li>
+<li><%= link_to "Cities", '/cities' %></li>
   <% if current_user %>
     <li ><%= link_to "Profile", user_path(current_user) %></li>
     <li><%= link_to "Log Out", logout_path %></li>
