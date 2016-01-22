@@ -40,7 +40,7 @@ If you forget to `bundle install` after that, you're going to Developer Hell and
 
 `rake db:drop` and then `rake db:create db:migrate` to get the ball rolling. We've kindly supplied you with some basic seed data, or you can roll your own, so follow-up with `rake db:seed` .
 
-Start your server in development mode and you'll now be able to access the site at `localhost:3000` to begin playing around. When you're ready to go big or go home, don't forget to compile your assets and start your server in production mode.
+Start your server in development mode and you'll now be able to access the site at `localhost:3000` to begin playing around. When you're ready to go big or go home, don't forget to precompile your assets and start your server in production mode.
 
 
 
