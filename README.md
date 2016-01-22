@@ -43,7 +43,7 @@ Endpoint | Method | Route | Data
 *"/users/new"* | GET | "users#new" | Takes new user to signup page
 *"/users"* | POST | "users#create" | Creates new user using signup page's data 
 *"/users/:id"* | GET | "users#show" | Shows a single user's page
-*"/users/:id/edit"* | GET "users#edit" | Takes logged-in user to update form for themselves
+*"/users/:id/edit"* | GET | "users#edit" | Takes logged-in user to update form for themselves
 *"/users/:id"* | PATCH/PUT | "users#update" | Updates user's details from edit page's data
 *"/login"* | GET | "sessions#new" | Logs in existing user
 *"/logout"* | GET | "sessions#destroy" | Logs out existing user, deletes session data/cookie
