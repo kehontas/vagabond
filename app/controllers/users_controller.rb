@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
 
-  before_action :logged_in?, only: [:index, :new, :edit, :show, :update]
+  before_action :logged_in?, only: [:index, :edit, :show, :update]
 
   def index
     @users = User.all
