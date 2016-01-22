@@ -1,13 +1,14 @@
-
-<P>Add your profile picture!</P>
-  <%= image_tag "http://www.toongames.com/avatars/preset/30.png" %>
-<br>
-<%= form_for @user, html: { multipart: true } do |f| %>
+<div class="sign-up">
+<P>Add your profile image</P>
+  <%= image_tag "http://i0.wp.com/invoice-factoring-information.com/components/com_k2/images/placeholder/user.png" %>
+ 
+ <%= form_for @user, html: { multipart: true } do |f| %>
 
   <div>
     <%= f.file_field :avatar %>
   </div><br>
-  <div>
+
+  <div id="sign_up">
     <%= f.email_field :email, placeholder: "Email" %>
   </div>
   <div>
@@ -22,5 +23,7 @@
   <div>
     <%= f.password_field :password, placeholder: "Password" %>
   </div>
-  <%= f.submit "Sign Up" %>
+<button type="button" class="btn btn-success">
+  <%= f.submit "Sign Up" %></button>
 <% end %>
+</div>

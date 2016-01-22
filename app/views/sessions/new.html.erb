@@ -1,3 +1,5 @@
+<div class="login">
+
 <h2>login</h2> 
 <p>
 <%= form_for @user, url: '/sessions', method: :post do |f| %>
@@ -7,8 +9,9 @@
 	<div>
 		<%= f.password_field :password, placeholder: 'Password' %>
 	</div>
-	<div>
+	<div><br>
 		<%= f.submit 'Submit' %>
 	</div>
 <% end %>
 </p>
+</div>

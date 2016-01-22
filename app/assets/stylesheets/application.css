@@ -11,11 +11,14 @@
  * file per style scope.
  *
  *=require_self
- *=require users.scss
- *=require cities.scss
  *=require pages.scss
- *=require posts.scss
- *=
+ *=require sessions.scss
+ *=require users.scss
+ *=require new.scss
+ *=require cities.scss
+ *=require posts.scss 
+ *=require show.scss
+ 
  */
 
 
@@ -30,7 +33,7 @@ h1  {
 		width: 50px;
 		float: right;
 		padding-right: 10px
-		
+
 
 }
 
